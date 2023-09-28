@@ -2,19 +2,19 @@ import styled from 'styled-components';
 
 export const CardWrapper = styled.div`
     display: flex;
-    flex: 1 0 33%;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 8px;
 `;
 
 export const Card = styled.div`
     background-color: #eaeaea;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-wrap: wrap;
     margin: 0.5rem;
-    max-width: 20rem;
+    max-width: 25rem;
     overflow: hidden;
     width: 100%;
 
