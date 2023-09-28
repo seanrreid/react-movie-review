@@ -1,8 +1,8 @@
+import PropTypes from 'prop-types';
 import { Card } from './UI';
 
-// eslint-disable-next-line react/prop-types
 export const MovieCard = ({ movie }) => {
-    console.log('movie', movie);
+
     return (
         <Card>
             <img src={movie.Poster} alt='image' />
@@ -12,4 +12,12 @@ export const MovieCard = ({ movie }) => {
             </div>
         </Card>
     );
+};
+
+MovieCard.propTypes = {
+     movie: PropTypes.shape({
+        Poster: PropTypes.string,
+        Title: PropTypes.string,
+        Plot: PropTypes.string
+    })
 };

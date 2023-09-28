@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CardWrapper } from './UI';
+import { CardWrapper, Button, Form } from './UI';
 import { MovieCard } from './MovieCard';
 
 export const MovieSearch = () => {
@@ -25,7 +25,7 @@ export const MovieSearch = () => {
     return (
         <>
             <section>
-                <form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit}>
                     <label>
                         Search For a Move by Title
                         <input
@@ -35,8 +35,8 @@ export const MovieSearch = () => {
                             onChange={handleChange}
                         />
                     </label>
-                    <button type='submit'>Get Movie</button>
-                </form>
+                    <Button type='submit'>Get Movie</Button>
+                </Form>
             </section>
             <section>
                 <CardWrapper>
