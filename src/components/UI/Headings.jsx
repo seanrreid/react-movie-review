@@ -4,7 +4,7 @@ export const Title = styled.h1`
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
-    margin: 0 0 1.5rem;
+    margin: 1.5rem 0;
     width: 100%;
 `;
 

@@ -1,14 +1,19 @@
 import { MovieSearch } from './components/MovieSearch';
-import { MainWrapper } from './components/MainWrapper';
-import { Title } from './components/Headings';
+import { Main, Wrapper, Title } from './components/UI';
 
 function App() {
     return (
         <>
-            <MainWrapper>
-                <Title>Movie Reviews Are Sooooooooo Cool</Title>
-                <MovieSearch />
-            </MainWrapper>
+            <header>
+                <Wrapper>
+                    <Title>Movie Reviews Are Sooooooooo Cool</Title>
+                </Wrapper>
+            </header>
+            <Main>
+                <Wrapper>
+                    <MovieSearch />
+                </Wrapper>
+            </Main>
         </>
     );
 }

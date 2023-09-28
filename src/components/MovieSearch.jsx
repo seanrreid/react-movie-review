@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { CardWrapper } from './UI';
 import { MovieCard } from './MovieCard';
-import { CardWrapper } from './Card';
 
 export const MovieSearch = () => {
     const [movie, setMovie] = useState(null);

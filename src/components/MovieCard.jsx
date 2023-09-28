@@ -1,4 +1,4 @@
-import { Card } from './Card';
+import { Card } from './UI';
 
 // eslint-disable-next-line react/prop-types
 export const MovieCard = ({ movie }) => {
