@@ -9,7 +9,7 @@ export const MovieSearch = () => {
     const getMovie = async (movieTitle) => {
         const apiUrl = `http://www.omdbapi.com/?t=${movieTitle}&apikey=66f230e4`;
         const data = await fetch(apiUrl).then((response) => response.json());
-        setMovies([...movies, data]);
+        setMovies([data, ...movies]);
     };
 
     const handleSubmit = (e) => {
