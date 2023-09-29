@@ -4,7 +4,6 @@ export const Form = styled.form`
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 30rem;
     padding: 1rem;
     width: 100%;
 

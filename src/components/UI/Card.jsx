@@ -12,20 +12,24 @@ export const Card = styled.div`
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: #111010;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    flex: 1 0 30rem;
     margin: 0.5rem;
-    max-width: 25rem;
+    max-width: 35rem;
     overflow: hidden;
-    width: 100%;
+
+    figure {
+        margin: 0;
+        padding: 0;
+    }
 
     img {
-        aspect-ratio: 2/3;
         height: auto;
+        object-fit: fill;
         width: 100%;
     }
 
-    .details {
+    .wrapper {
         padding: 8px 16px 16px;
         width: 100%;
     }

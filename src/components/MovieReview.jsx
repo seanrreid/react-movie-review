@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Form } from './UI';
 
 const ReviewForm = styled(Form)`
+    padding: 0;
     width: 100%;
 
     label,
@@ -13,13 +14,12 @@ const ReviewForm = styled(Form)`
     textarea {
         background-color: whitesmoke;
         color: #111010;
-        max-width: 21rem;
         min-height: 5rem;
         width: 100%;
     }
 `;
 
-export const MovieReview = ({ movieTitle }) => {
+export const MovieReview = ({ movieTitle, className }) => {
     const [textValue, setTextValue] = useState('');
     const [review, setReview] = useState(null);
 
@@ -33,7 +33,7 @@ export const MovieReview = ({ movieTitle }) => {
     };
 
     return (
-        <div className='details'>
+        <div className={className}>
             {review ? (
                 <>
                     <h4>
@@ -64,4 +64,5 @@ export const MovieReview = ({ movieTitle }) => {
 
 MovieReview.propTypes = {
     movieTitle: PropTypes.string,
+    className: PropTypes.string,
 };
